@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timeline</title>
+  <style>
+    .timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #4b7c53;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #149b31;
+  border-radius: 50%;
+  top: 10;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.timeline-item.left .timeline-content {
+  left: 70%;
+}
+
+.timeline-item.right .timeline-content {
+  left: 5%;
+}
+
+.timeline-content {
+  position: relative;
+  left: 10%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-description {
+  margin-bottom: 10px;
+}
+    </style>
+</head>
+<body style="margin: 1%; background-color:#8d2264;">
+  <div class="timeline">
+    <div class="timeline-item right">
+      <div class="timeline-content"><h1>B.Tech</h1>CGPA: 8.98
+        <div class="timeline-date">2019 - 2023</div>
+        <div class="timeline-description">KAKATIYA INSTITUTE OF TECHNOLOGY<br> AND SCIENCE, WARANGAL.</div>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content"><h1>Intermediate</h1>Marks: 977/1000
+        <div class="timeline-date">2017 - 2019</div>
+        <div class="timeline-description">Alphores Junior college, Karimnagar.</div>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content"><h1>SSC</h1>CGPA: 10.0
+        <div class="timeline-date">2017</div>
+        <div class="timeline-description">Sri Kakatiya high school, Jammikunta.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
