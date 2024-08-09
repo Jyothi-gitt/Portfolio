@@ -1,2 +1,2 @@
 # Portfolio
-My portfolio using CSS and HTML
+My portfolio using CSS and HTML.
